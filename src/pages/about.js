@@ -6,6 +6,7 @@ import profilePic from "../../public/images/profile/developer-pic-8.png";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -35,7 +36,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>ABUBAKAR | About Page</title>
+        <title>ABUBAKAR | About </title>
         <meta name="description" content="any description" />
       </Head>
 
@@ -48,10 +49,11 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium text-justify">
-                Hi, I'm ABUBAKAR, a Web Developer with a passion for creating
-                beautiful, functional, and user-centered digital experiences.
-                With 2 years of experience in the field. I am always looking for
-                new and innovative ways to bring my clients' visions to life.
+                Hi, I'm <span className="font-bold">ABUBAKAR</span>, a Web
+                Developer with a passion for creating beautiful, functional, and
+                user-centered digital experiences. With 2 years of experience in
+                the field. I am always looking for new and innovative ways to
+                bring my clients' visions to life.
               </p>
               <p className="font-medium my-4 text-justify">
                 I believe that design is about more than just making things look
@@ -101,6 +103,7 @@ const about = () => {
             </div>
           </div>
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
