@@ -7,11 +7,11 @@ import { GithubIcon, LinkedInIcon, MailIcon } from "@/components/Icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
-      <Layout className="py-8 flex items-center justify-between">
+    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base">
+      <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
         <span>Copyright &copy; {new Date().getFullYear()} AbuBakar</span>
 
-        <div className="flex items-center">
+        <div className="flex items-center lg:mt-4">
           <motion.a
             href="https://github.com/abubakrsaddique"
             target={"_blank"}
